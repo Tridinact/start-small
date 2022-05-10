@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    font-family: 'Keep Calm';
+}
+
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(screenshot.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+    z-index: 1;
+}
+
+ul li{
+    display: inline-block;
+    z-index: 1;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    z-index: 1;
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+
+}
+
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+
+.title{
+    position:absolute;
+    cursor: context-menu;
+    width: 100px;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    padding: 15rem;
+    white-space: nowrap;/* Text doesnt break*/ 
+    /*Spent like 15-30m finding on how to not make the text break*/
+}
+.main-2{
+    padding: 5vh;
+}
+.title h1{
+    color: #fff;
+    font-size:70px;
+}
+
+.profile-pic{
+    position: absolute;
+    height: 500px;
+    margin: 0% auto 0% 55%;
+   /* padding-left: 35rem;
+    margin-left: 10rem; */
+}
+
+@media (min-height: 731px) {
+    .main-2{
+        padding: 100px;
+    }
+}
+
+@media (max-width: 1100px) {
+    img{
+    max-height: 317px;
+    max-width: 317px;
+    }
+
+    .profile-pic{
+        top: 20%;
+    }
+
+    .title h1{
+        color: #fff;
+        font-size:50px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+}
+
+@media (max-height: 650px) {
+    img{
+    max-height: 317px;
+    max-width: 317px;
+    }
+
+    .profile-pic{
+        top: 20%;
+    }
+
+    .title h1{
+        color: #fff;
+        font-size:50px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+}
+
+img{
+    height: 417px;
+    width: 417px;
+    padding-top: 15%;
+}
+
+.sub-title {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    padding: 0.5rem;
+    cursor: context-menu;
+}
+
+.sub-title h2{
+    color : #fff;
+    font-size : 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+}
+
+.typed-text {
+    font-weight: normal;
+    color: rgb(0, 0, 0);
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: white;
+    margin-left: 0.1rem;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {background-color: white;}
+    49% {background-color: white;}
+    50% {background-color: transparent;}
+    99% {background-color: transparent;}
+    100% {background-color: white;}
+}

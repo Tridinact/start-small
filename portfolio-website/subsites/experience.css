@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    font-family: 'Keep Calm';
+}
+
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(photo1.JPG);
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width:530px) {
+    body {
+        width: 505px;
+    }
+}
+
+@media (max-height:530px) {
+    body {
+        width: 505px;
+    }
+}
+
+.head-1{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+.head-1 .head-2{
+    display: inline-block;
+}
+
+.head-1 .head-2 a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+}
+
+.head-1 .head-2 a:hover{
+    background-color: #fff;
+    color: #000;
+
+}
+
+.head-1 .head-2.active a{
+    background-color: #fff;
+    color: #000;
+}
+
+.main{
+    padding: 40px;
+}
+
+/*.projects {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.vertical-line-1 {
+    border-left: 6px solid white;
+    height: 1500px;
+    position:absolute;
+    left: 50%;
+    top: 20%;
+}
+*/
+
+.section {
+    overflow-wrap: normal;
+    position: relative;
+    padding: 10px 10% 10px 20%;
+    margin: 25px;
+    color: white;
+}
+
+.header {
+    padding: 0;
+    left:50%;
+    font-size: 2rem;
+    font-family: "Times New Roman";
+    text-decoration: underline white;
+    cursor: context-menu;
+}
+
+.list {
+    list-style: none;
+    padding: 0px 5px;
+}
+
+.item {
+    margin: 30px 10px;
+    line-height: 1.50;
+    cursor: context-menu;
+}
+
+.item > a {
+    display: inline-block;
+}
+
+.item-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.item-organization {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.item-years {
+    line-height: 1.7;
+    opacity: 80%;
+}
+
+.item-link {
+    text-decoration: none ;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.item-link:hover {
+    color: rgb(255, 230, 0);
+    transition: 0.3s ease-in;
+}
+
+.skills {
+    overflow-wrap: normal;
+    position: relative;
+    padding: 10px 5% 10px 20%;
+    margin: 25px;
+    color: white;
+}
+
+
+.skills-grid {
+    margin: 30px 0 30px 0;
+    padding-right: 15%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 180px));
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+.skills-grid .grid {
+    width: 180px;
+    height: 50px;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-style: solid;
+    cursor: context-menu;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.skills-grid .grid.experienced {
+    border-color: green;
+    background-color: rgba(0, 128, 0, 0.500);
+}
+
+.skills-grid .grid.intermediate {
+    border-color: rgb(255, 230, 0);
+    background-color: rgb(255, 230, 0, 0.500);   
+}
+
+.skills-grid .grid.beginner {
+    border-color: red;
+    background-color: rgba(255, 0, 0, 0.500);
+}
