@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+</br>
+</br>
+<h1 align="center">Log</h1>
+<ul class="list-group list-group-flush" id="logs">
+    {% for log in user.logs %}
+    <li class="list-group-item">
+        <b>{{ log.title }}</b>
+        </br>
+        {{ log.date }}
+        <button type="button" class="close" onClick="deleteLog({{ log.id }})">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </li>
+    {% endfor %}
+</ul>
+</br>
+</br>
+</br>
+<h2 align="center">Add Log</h2>
+</br>
+<form method="POST">
+    <textarea name="log" id="log" class="form-control"></textarea>
+    </br>
+    <div align="center"><input type="datetime-local" id="date" name="date"></div>
+    <!-- <input id="image" type="file" name="image" accept="image/jpeg,image/gif,image/png"> -->
+    </br>
+    <div align="center">
+        <button type="submit" class="btn btn-primary">Add Log</button>
+    </div>
+</form>
+{% endblock %}
